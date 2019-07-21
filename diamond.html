@@ -11,7 +11,6 @@
 
 <script>    
     let scene, camera, renderer;
-    let disc, disc2, disc3, sphere;
     let diamond = [];
     let ADD = 0.01;
 
@@ -48,10 +47,8 @@
     // main animation loop - calls 50-60 times per second.
     let mainLoop = function() {
 
-        var timer = Date.now() * 0.0005;
-
-        camera.position.x = Math.cos(timer) * 30;
-        camera.position.z = Math.sin(timer) * 30;
+        camera.position.x = 0;
+        camera.position.z = 0;
 
         camera.lookAt(scene.position);
 
