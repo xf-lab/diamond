@@ -17,49 +17,7 @@
 
     let creatediamond = function(){
 
-        //PLANET
-        let geometry = new THREE.SphereGeometry(6.24, 30, 30, 0);      
-        let material = new THREE.MeshBasicMaterial({color: 0x543510});           
-        planet = new THREE.Mesh( geometry, material );
-        planet.position.y = -10;
-        scene.add(planet);
-
-        //DISC1
-        geometry = new THREE.TorusGeometry(9, 0.6, 2, 100); 
-        material = new THREE.MeshBasicMaterial({color: 0xFFBC6C});
-        disc = new THREE.Mesh( geometry, material );
-        disc.position.y = -10;
-        /*disc.rotation.x = 1.7;
-        disc.rotation.y = 0.4;*/
-        diamond.push(disc);
-        scene.add(disc);
-
-        //DISC2
-        geometry = new THREE.TorusGeometry(7.5, 0.6, 2, 100);      
-        material = new THREE.MeshBasicMaterial({color: 0xFFBC6C});
-        disc = new THREE.Mesh( geometry, material );
-        disc.position.y = -10;
-        /*disc.rotation.x = 1.7;
-        disc.rotation.y = 0.4;*/
-        diamond.push(disc);
-        scene.add(disc);
-
-        //DISC3
-        geometry = new THREE.TorusGeometry(10.5, 0.6, 2, 100);
-        material = new THREE.MeshBasicMaterial({color: 0xFF9D6C});
-        disc = new THREE.Mesh( geometry, material );
-        disc.position.y = -10;
-        /*disc.rotation.x = 1.7;
-        disc.rotation.y = 0.4;*/
-        diamond.push(disc);
-        scene.add(disc);
-
-
-        diamond.forEach( disc => {
-            disc.rotation.x = 1.7
-            disc.rotation.y = 0.4
-            scene.add(disc);
-        });
+        
     }   
     
     // set up the environment - 
